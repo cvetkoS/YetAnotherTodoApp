@@ -1,0 +1,27 @@
+{
+  "name": "yetanothertodoapp",
+  "version": "1.0.0",
+  "description": "Todo App with HTML css/sass and JS just for practice",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvetkoS/YetAnotherTodoApp.git"
+  },
+  "author": "Cvetko Stevic",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/cvetkoS/YetAnotherTodoApp/issues"
+  },
+  "homepage": "https://github.com/cvetkoS/YetAnotherTodoApp#readme"
+}
