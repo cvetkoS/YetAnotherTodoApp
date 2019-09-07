@@ -1,0 +1,109 @@
+:root {
+    --clr-primary: #f0832a;
+    --clr-light: #f4f4f4;
+    --clr-dark: #333;
+    --clr-warning: #cc3300;
+}
+
+*,
+*::before,
+*::after {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background: var(--clr-primary);
+    color: var(--clr-light);
+
+    display: grid;
+    grid:
+        /*First Row*/
+        "header header header header"auto
+        /*Second row*/
+        "...... lists  active ......"auto /
+        /*Define sizes*/
+        1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
+}
+
+
+.title {
+    grid-area: header;
+    text-align: center;
+    font-size: calc(7vh + 2rem);
+    font-weight: 900;
+    color: rgba(0, 0, 0, .2);
+    margin: -0.2em 0 0.5em 0;
+}
+
+.all-tasks {
+    padding-left: 1em;
+    grid-area: lists;
+}
+
+.task-list {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    list-style: circle;
+    padding-left: 1.1em;
+}
+
+form {
+    display: flex;
+}
+
+.btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.btn.create {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: .25em;
+    transition: opacity 250ms ease-in;
+}
+
+.btn.create:hover {
+    opacity: 0.7;
+}
+
+.new-input {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    font-size: inherit;
+    outline: none;
+
+    transition: border-bottom 150ms ease-in;
+    order: 2;
+}
+
+.new-input:focus {
+    border-bottom-width: 2px;
+}
+
+.new-input:focus::placeholder {
+    opacity: 0.2;
+}
+
+.new-input.list {
+    font-size: 1.1rem;
+}
+
+.active-list {
+    font-weight: 900;
+}
+
+.todo-list {
+    padding-left: 1em;
+    grid-area: active;
+}
